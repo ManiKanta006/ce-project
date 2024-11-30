@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="project.css">
+        <script>
+            function loadContent() {
+                const selectElement = document.querySelector("select[name='Select-Subject']");
+                const iframe = document.getElementById("content-frame");
+                
+                switch (selectElement.value) {
+                    case "Calculus":
+                        iframe.src = "calculus.html";  // Link to the Calculus page
+                        break;
+                    case "Computer Essentials":
+                        iframe.src = "computer essentials.html";  // Link to Computer Essentials page
+                        break;
+                    case "Engineering Physics":
+                        iframe.src = "Eng phys.html";  // Link to Engineering Physics page
+                        break;
+                    case "Engineering Practice":
+                        iframe.src = "Eng Practice.html";  // Link to Engineering Practice page
+                        break;
+                    default:
+                        iframe.src = "";  // Clear iframe if "Select" is chosen
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>Computer Essentials Individual Project</h1>
+        </header>
+        <div class="nav-bar">
+            <button class="nav-button">Home</button>
+            <button class="nav-button">Photos</button>
+            <button class="nav-button">About Us</button>
+            <button class="nav-button">Contact</button>
+        </div>
+        <br>
+        <label for="Select-Subject">Select Subject:</label>
+        <select name="Select-Subject" onchange="loadContent()">
+            <option>Select</option>
+            <option>Calculus</option>
+            <option>Computer Essentials</option>
+            <option>Engineering Physics</option>
+            <option>Engineering Practice</option>
+        </select>
+        <iframe id="content-frame" width="1200px" height="900px" src=""></iframe>
+        <footer>
+            <p>Developed by T. Manikanta</p>
+        </footer>
+    </body>
+</html>

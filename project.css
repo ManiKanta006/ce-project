@@ -1,0 +1,132 @@
+/* Universal Style Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #f0f0f0, #d6e4f0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background: #6a93d4;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #466799;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* Navigation Bar Styling */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    border-bottom: 2px solid #ddd;
+    padding: 10px 0;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button {
+    background: #f7c331;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button:hover {
+    background: #ff9800;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Dropdown Menu Styling */
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #555;
+}
+
+select {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+select:hover,
+select:focus {
+    border-color: #6a93d4;
+}
+
+/* Iframe Styling */
+iframe {
+    display: block;
+    width: 90%;
+    height: 800px;
+    margin: 20px auto;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    margin-top: 20px;
+    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
+    font-style: italic;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .nav-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    iframe {
+        width: 95%;
+        height: 600px;
+    }
+}

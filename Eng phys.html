@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="project.css">
+        <script>
+            function loadContent() {
+                const selectElement = document.querySelector("select[name='Select-module']");
+                const iframe = document.getElementById("content-frame");
+                
+                switch (selectElement.value) {
+                    case "Module 1":
+                        iframe.src = "Eng phys_module 1.html";  // Link to the Calculus page
+                        break;
+                    case "Module 2":
+                        iframe.src = "Eng phys_module 2.html";  // Link to Computer Essentials page
+                        break;
+                    case "Module 3":
+                        iframe.src = "Eng phys_module 3.html";  // Link to Engineering Physics page
+                        break;
+                    case "Module 4":
+                        iframe.src = "Eng phys_module 4.html";  // Link to Engineering Practice page
+                        break;
+                    case "Module 5":
+                        iframe.src = "Eng phys_module 5.html";  // Link to Engineering Practice page
+                        break;
+                    case "Module 6":
+                        iframe.src = "Eng phys_module 6.html";  // Link to Engineering Practice page
+                        break;
+                    case "Module 7":
+                        iframe.src = "Eng phys_module 7.html";  // Link to Engineering Practice page
+                        break;
+                    case "Module 8":
+                        iframe.src = "Eng phys_module 8.html";  // Link to Engineering Practice page
+                        break;
+                    case "Module 9":
+                        iframe.src = "Eng phys_module 9.html";  // Link to Engineering Practice page
+                        break;
+                    case "Module 10":
+                        iframe.src = "Eng phys_module 10.html";  // Link to Engineering Practice page
+                        break;
+                    default:
+                        iframe.src = "";  // Clear iframe if "Select" is chosen
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <br>
+        <P style="text-align: center; font-size: x-large;">Engineering Physics</P>
+        <br>
+        <label for="Select-module">Select Module:</label>
+        <select name="Select-module" onchange="loadContent()">
+            <option>Select</option>
+            <option>Module 1</option>
+            <option>Module 2</option>
+            <option>Module 3</option>
+            <option>Module 4</option>
+            <option>Module 5</option>
+            <option>Module 6</option>
+            <option>Module 7</option>
+            <option>Module 8</option>
+            <option>Module 9</option>
+            <option>Module 10</option>
+        </select>
+        <br>
+        <iframe id="content-frame" width="1200px" height="900px" src=""></iframe>
+    </body>
